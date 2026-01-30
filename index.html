@@ -148,7 +148,7 @@
                 <div class="sub-style">
                     <h4 class="sub-title px-3 mb-0">Prestations</h4>
                 </div>
-                <h1 class="display-3 mb-4">Nos services (selon la carte)</h1>
+                <h1 class="display-3 mb-4">Nos services </h1>
                 <p class="mb-0">
                     Une prise en charge complète : thérapie manuelle, rééducation, techniques spécialisées,
                     bien-être & performance.
@@ -337,10 +337,7 @@
                 <div class="sub-style">
                     <h4 class="sub-title px-3 mb-0">Liste complète</h4>
                 </div>
-                <h1 class="display-3 mb-4">Toutes les prestations (exactement comme la carte)</h1>
-                <p class="mb-0">
-                    Voici la liste complète : :contentReference[oaicite:1]{index=1}
-                </p>
+                
             </div>
 
             <div class="row g-4 justify-content-center">
@@ -366,7 +363,7 @@
                                     <li><i class="fa fa-check text-primary me-2"></i> Thérapie manuelle</li>
                                     <li><i class="fa fa-check text-primary me-2"></i> Crochetage</li>
                                     <li><i class="fa fa-check text-primary me-2"></i> Mulligan MWM A-B et C sports</li>
-                                    <li><i class="fa fa-check text-primary me-2"></i> Técar thérapie</li>
+                                    <li><i class="fa fa-check text-primary me-2"></i> Thécar thérapie</li>
                                     <li><i class="fa fa-check text-primary me-2"></i> Onde de choc</li>
                                     <li><i class="fa fa-check text-primary me-2"></i> Yoga / Pilates</li>
                                     <li><i class="fa fa-check text-primary me-2"></i> Soins médico-esthétiques</li>
@@ -452,58 +449,66 @@
                     <p class="fs-4 text-uppercase text-primary">Demande de rendez-vous</p>
                     <h1 class="display-5 mb-4">Envoyer un message</h1>
 
-                    <form action="#" method="post">
-                        <div class="row gy-3 gx-4">
-                            <div class="col-xl-6">
-                                <input type="text" class="form-control py-3 border-primary bg-transparent text-white"
-                                       placeholder="Nom" required>
-                            </div>
+                  <form id="rdvForm">
+    <div class="row gy-3 gx-4">
+        <div class="col-xl-6">
+            <input id="name" type="text" class="form-control py-3 border-primary bg-transparent text-white"
+                   placeholder="Nom" required>
+        </div>
 
-                            <div class="col-xl-6">
-                                <input type="tel" class="form-control py-3 border-primary bg-transparent"
-                                       placeholder="Téléphone" required>
-                            </div>
+        <div class="col-xl-6">
+            <input id="phone" type="tel" class="form-control py-3 border-primary bg-transparent"
+                   placeholder="Téléphone" required>
+        </div>
 
-                            <div class="col-xl-12">
-                                <input type="email" class="form-control py-3 border-primary bg-transparent text-white"
-                                       placeholder="Email">
-                            </div>
+        <div class="col-xl-12">
+            <input id="email" type="email" class="form-control py-3 border-primary bg-transparent text-white"
+                   placeholder="Email">
+        </div>
 
-                            <div class="col-xl-12">
-                                <select class="form-select py-3 border-primary bg-transparent">
-                                    <option selected>Choisir une prestation</option>
-                                    <option>Ostéopathie</option>
-                                    <option>Kinésithérapie / Physiothérapie</option>
-                                    <option>Thérapie manuelle</option>
-                                    <option>Dry Needling</option>
-                                    <option>Técar thérapie</option>
-                                    <option>Onde de choc</option>
-                                    <option>Drainage lymphatique</option>
-                                    <option>Rééducation périnéale / périnatalité</option>
-                                    <option>Kiné respiratoire</option>
-                                    <option>Nutrition / Amincissement</option>
-                                    <option>Coaching sportif</option>
-                                    <option>Yoga / Pilates</option>
-                                    <option>Soins médico-esthétiques</option>
-                                </select>
-                            </div>
+        <div class="col-xl-12">
+            <select id="service" class="form-select py-3 border-primary bg-transparent">
+                <option value="" selected>Choisir une prestation</option>
+                <option>Ostéopathie</option>
+                <option>Kinésithérapie / Physiothérapie</option>
+                <option>Thérapie manuelle</option>
+                <option>Dry Needling</option>
+                <option>Thécar thérapie</option>
+                <option>Onde de choc</option>
+                <option>Drainage lymphatique</option>
+                <option>Rééducation périnéale / périnatalité</option>
+                <option>Kiné respiratoire</option>
+                <option>Nutrition / Amincissement</option>
+                <option>Coaching sportif</option>
+                <option>Yoga / Pilates</option>
+                <option>Soins médico-esthétiques</option>
+            </select>
+        </div>
 
-                            <div class="col-xl-12">
-                                <input type="date" class="form-control py-3 border-primary bg-transparent">
-                            </div>
+        <div class="col-xl-12">
+            <input id="date" type="date" class="form-control py-3 border-primary bg-transparent">
+        </div>
 
-                            <div class="col-12">
-                                <textarea class="form-control border-primary bg-transparent text-white"
-                                          rows="5" placeholder="Votre message"></textarea>
-                            </div>
+        <div class="col-12">
+            <textarea id="message" class="form-control border-primary bg-transparent text-white"
+                      rows="5" placeholder="Votre message"></textarea>
+        </div>
 
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary text-white w-100 py-3 px-5">
-                                    ENVOYER
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary text-white w-100 py-3 px-5">
+                ENVOYER SUR WHATSAPP
+            </button>
+        </div>
+
+        <div class="col-12">
+            <small class="text-white-50">
+                Après clic, WhatsApp s’ouvre avec le message prêt. Il vous suffit d’appuyer sur “Envoyer”.
+            </small>
+        </div>
+    </div>
+</form>
+
+
                 </div>
             </div>
 
@@ -609,6 +614,38 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+	<script>
+document.getElementById("rdvForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const service = document.getElementById("service").value.trim();
+    const date = document.getElementById("date").value;
+    const msg = document.getElementById("message").value.trim();
+
+    // Message pré-rempli
+    const text =
+`Bonjour Docteur,
+Je souhaite prendre rendez-vous.
+
+Nom : ${name}
+Téléphone : ${phone}
+Email : ${email || "—"}
+Prestation : ${service || "—"}
+Date souhaitée : ${date || "—"}
+
+Message :
+${msg || "—"}
+`;
+
+    const whatsappNumber = "212633440049";
+    const url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text);
+
+    window.open(url, "_blank");
+});
+</script>
 
 </body>
 
